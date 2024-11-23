@@ -4,7 +4,7 @@
 
 Download the compressed file.
 
-<img src="./1.png">
+<img src="./11.png">
 
 Unzip the downloaded compressed package to the plugins folder.
 
