@@ -2,7 +2,7 @@
 
 ## 1. Install
 
-Download this repository as a compressed package.
+Download the compressed file.
 
 <img src="./1.png">
 
