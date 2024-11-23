@@ -1,0 +1,5 @@
+plugin/node_modules
+!plugin/node_modules/discord-rpc
+plugin/log/
+plugin/build/
+plugin/data/

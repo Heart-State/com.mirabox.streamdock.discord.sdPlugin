@@ -1,0 +1,179 @@
+{
+  "Actions": [
+    {
+      "Icon": "static/icon/01.儅僀僋儈儏乕僩[Discord]僾儔僌僀儞儕僗僩.png",
+      "Name": "麦克风静音",
+      "DisableAutomaticStates": true,
+      "States": [
+        {
+          "Image": "static/icon/01.MIC MUTE OFF[Discord]",
+          "Name": "Unmute"
+        },
+        {
+          "Image": "static/icon/02.MIC MUTE ON[Discord]",  
+          "Name": "Mute"
+        }
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": false,
+      "Tooltip": "discord operation",
+      "UUID": "com.hotspot.streamdock.discord.mute",
+      "PropertyInspectorPath": "propertyInspector/mute/index.html"
+    },
+    {
+      "Icon": "static/icon/02.僗僺乕僇乕儈儏乕僩[Discord]僾儔僌僀儞儕僗僩.png",
+      "Name": "耳机静音",
+      "DisableAutomaticStates": true,
+      "States": [
+        {
+          "Image": "static/icon/03.SPEAKER MUTE OFF[Discord]", 
+          "Name": "Undeafen"
+        },
+        {
+          "Image": "static/icon/04.SPEAKER MUTE ON[Discord]",
+          "Name": "Deafen"
+        }
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": false,
+      "Tooltip": "discord operation",
+      "UUID": "com.hotspot.streamdock.discord.deaf",
+      "PropertyInspectorPath": "propertyInspector/deaf/index.html"
+    },
+    {
+      "Icon": "static/icon/03.儃僀僗僠儍儞僱儖[Discord]僾儔僌僀儞儕僗僩.png",
+      "Name": "语音通道",
+      "States": [
+        {
+          "Image": "static/icon/03.儃僀僗僠儍儞僱儖[Discord]",
+          "Name": "Enter"
+        },
+        {
+          "Image": "static/icon/03.儃僀僗僠儍儞僱儖[Discord]",
+          "Name": "Leave"
+        }
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": false,
+      "Tooltip": "discord operation",
+      "UUID": "com.hotspot.streamdock.discord.voicechannel",
+      "PropertyInspectorPath": "propertyInspector/voicechannel/index.html"
+    },
+    {
+      "Icon": "static/icon/04.僥僉僗僩僠儍儞僱儖[Discord]僾儔僌僀儞儕僗僩.png",
+      "Name": "文本通道",
+      "States": [
+        {
+          "Image": "static/icon/04.僥僉僗僩僠儍儞僱儖[Discord]",
+          "Name": "Enter"
+        }
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": false,
+      "Tooltip": "discord operation",
+      "UUID": "com.hotspot.streamdock.discord.textchannel",
+      "PropertyInspectorPath": "propertyInspector/textchannel/index.html"
+    },
+    {
+      "Icon": "static/icon/05.捠抦[Discord]僾儔僌僀儞儕僗僩.png",
+      "Name": "通知",
+      "States": [
+        {
+          "FontSize": "12",
+          "TitleAlignment": "center",
+          "Image": "static/icon/05.捠抦[Discord]"
+        }
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": false,
+      "Tooltip": "discord operation",
+      "UUID": "com.hotspot.streamdock.discord.notice",
+      "PropertyInspectorPath": "propertyInspector/notice/index.html"
+    },
+    {
+      "Icon": "static/icon/06.儐乕僓乕壒検愝掕[Discord]僾儔僌僀儞儕僗僩.png",
+      "Name": "用户音量控制",
+      "States": [
+        {
+          "FontSize": "12",
+          "TitleAlignment": "bottom",
+          "Image": "static/icon/06.儐乕僓乕壒検愝掕[Discord].png"
+        }
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": false,
+      "Tooltip": "discord operation",
+      "UUID": "com.hotspot.streamdock.discord.userVolumeControl",
+      "PropertyInspectorPath": "propertyInspector/userVolumeControl/index.html"
+    },
+    {
+      "Icon": "static/icon/07.壒検愝掕[Discord]僾儔僌僀儞儕僗僩.png",
+      "Name": "音量控制",
+      "States": [
+        {
+          "Image": "static/icon/07.壒検愝掕[Discord]"
+        }
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": false,
+      "Tooltip": "discord operation",
+      "UUID": "com.hotspot.streamdock.discord.volumeControl",
+      "PropertyInspectorPath": "propertyInspector/volumeControl/index.html"
+    },
+    {
+      "Icon": "static/icon/08.僒僂儞僪儃乕僪[Discord]僾儔僌僀儞儕僗僩.png",
+      "Name": "语音板",
+      "States": [
+        {
+          "FontSize": "9",
+          "TitleAlignment": "bottom",
+          "Image": "static/icon/08.僒僂儞僪儃乕僪[Discord]"
+        }
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": false,
+      "Tooltip": "discord operation",
+      "UUID": "com.hotspot.streamdock.discord.action1",
+      "PropertyInspectorPath": "propertyInspector/action1/index.html"
+    },
+    {
+      "Icon": "static/icon/09.僆乕僨傿僆僨僶僀僗愝掕[Discord]僾儔僌僀儞儕僗僩.png",
+      "Name": "设置音频设备",
+      "States": [
+        {
+          "FontSize": "12",
+          "TitleAlignment": "center",
+          "Image": "static/icon/09.僆乕僨傿僆僨僶僀僗愝掕[Discord]"
+        }
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": false,
+      "Tooltip": "discord operation",
+      "UUID": "com.hotspot.streamdock.discord.setDevices",
+      "PropertyInspectorPath": "propertyInspector/setDevices/index.html"
+    }
+  ],
+  "SDKVersion": 1,
+  "Author": "HotSpot",
+  "Name": "discord",
+  "Icon": "static/favicon",
+  "CodePath": "plugin/app.exe",
+  "Description": "discord operation",
+  "Category": "discord",
+  "CategoryIcon": "static/favicon",
+  "Version": "2.0.0",
+  "URL": "http://video.hotspotek.com.cn/",
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "7"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "2.9"
+  }
+}

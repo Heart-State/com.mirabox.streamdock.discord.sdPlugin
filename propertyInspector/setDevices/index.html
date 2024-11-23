@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>模板 - 属性检查器</title>
+    <link rel="stylesheet" href="../../static/css/sdpi.css">
+</head>
+
+<body>
+    <div class="sdpi-wrapper" style="display: none">
+        <div class="sdpi-item" id="initiateBox" style="display: none">请启动Discord</div>
+        <div class="sdpi-item" id="initiateBoxx" style="display: none">连接次数过多请重新启动Discord</div>
+        <form id="authorizeBox" style="display: none">
+            <div class="sdpi-item">
+                <div class="sdpi-item-label">获取ID</div>
+                <div class="sdpi-item-value" style="color: rgb(88, 101, 242);line-height: 30px;" id="open">https://discord.com/developers/applications</div>
+            </div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label">CLIENT ID</div>
+                <input class="sdpi-item-value" id="clientId" type="text" required>
+            </div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label">授权</div>
+                <button class="sdpi-item-value" id="authorizeBtn">请求授权</button>
+            </div>
+        </form>
+        <div type="select" class="sdpi-item" id="modeBox">
+            <div class="sdpi-item-label">模式</div>
+            <select class="sdpi-item-value" id="mode">
+                <option value="input" selected>设置输入设备</option>
+                <option value="output">设置输出设备</option>
+                <option value="both">设置二者</option>
+            </select>
+        </div>
+        <div type="select" class="sdpi-item" id="inputBox" style="display: none">
+            <div class="sdpi-item-label">输入</div>
+            <select class="sdpi-item-value" id="input"></select>
+        </div>
+        <div type="select" class="sdpi-item" id="outputBox" style="display: none">
+            <div class="sdpi-item-label">输出</div>
+            <select class="sdpi-item-value" id="output"></select>
+        </div>
+    </div>
+    <script src="../utils/common.js"></script>
+    <script src="../utils/action.js"></script>
+    <script src="../utils/axios.js"></script>
+    <script src="index.js"></script>
+</body>
+<style>
+    #initiateBox,
+    #initiateBoxx {
+        justify-content: center;
+        font-weight: bold;
+    }
+</style>
+
+</html>
