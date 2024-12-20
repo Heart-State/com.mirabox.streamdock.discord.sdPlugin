@@ -6,12 +6,7 @@
 // $dom 获取文档元素 - 不是动态的都写在这里面
 const $local = true, $back = false, $dom = {
     main: $('.sdpi-wrapper'),
-    authorizeBtn: $('#authorizeBtn'),
-    authorizeBox: $('#authorizeBox'),
-    initiateBox: $('#initiateBox'),
-    initiateBoxx: $('#initiateBoxx'),
-    clientId: $('#clientId'),
-    open: $('#open'),
+    logout: $('#logout'),
     typeBox: $('#typeBox'),
     iconBox: $('#iconBox'),
     adjustmentBox: $('#adjustmentBox'),
@@ -31,7 +26,7 @@ const $propEvent = {
         if ('voice_states' in data.settings) {
             $dom.user.innerHTML = ''
             data.settings.voice_states.forEach(item => {
-                $dom.user.innerHTML += `<option value="${item.user.id}">${item.user.global_name?item.user.global_name:item.user.username}</option>`
+                $dom.user.innerHTML += `<option value="${item.user.id}">${item.user.global_name ? item.user.global_name : item.user.username}</option>`
             });
             $dom.user.value = data.settings.user
             $dom.modeBox.style.display = 'flex'
@@ -71,36 +66,21 @@ const $propEvent = {
     },
     sendToPropertyInspector(data) {
         // console.log(data);
-        if ('access_token' in data) {
-            if (!data.access_token) {
-                $dom.authorizeBox.style.display = 'block'
-            } else {
-                $dom.authorizeBox.style.display = 'none'
-            }
-        }
-        if ('status' in data) {
-            $dom.authorizeBox.style.display = 'block'
-        }
-        if (data?.msg == "RPC_CONNECTION_TIMEOUT") {
-            $dom.initiateBoxx.style.display = 'flex'
-        }
-        if (!data.initiate) {
-            $dom.initiateBox.style.display = 'flex'
-        } else {
-            $dom.initiateBox.style.display = 'none'
+        if (data?.open) {
+            window.$websocket = $websocket;
+            window.$lang = $lang;
+            // 获取屏幕的宽度和高度
+            const screenWidth = window.screen.width;
+            const screenHeight = window.screen.height;
+            // 计算居中位置
+            const top = (screenHeight - 500) / 2;
+            const left = (screenWidth - 350) / 2;
+            window.open("../utils/authorization.html", "_blank", `width=500,height=350,top=${top},left=${left}`)
         }
     }
 };
 
-$dom.authorizeBtn.on('click', (e) => {
-    if ($dom.clientId.value != null && $dom.clientId.value != '') {
-        $websocket.openUrl("http://127.0.0.1:3002/authorization?clientId=" + $dom.clientId.value)
-    }
-})
 
-$dom.open.on('click', () => {
-    $websocket.openUrl('https://discord.com/developers/applications')
-})
 
 $dom.user.on('change', (e) => {
     $websocket.sendToPlugin({ user: $dom.user.value });
@@ -136,6 +116,10 @@ $dom.adjustment.on('change', (e) => {
 
 $dom.volume.on('change', (e) => {
     $websocket.sendToPlugin({ volume: $dom.volume.value * 2 });
+})
+
+$dom.logout.on('click', () => {
+    $websocket.openUrl('http://127.0.0.1:3002/logout')
 })
 
 

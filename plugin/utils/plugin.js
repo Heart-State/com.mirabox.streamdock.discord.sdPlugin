@@ -37,7 +37,7 @@ class Plugins {
     // 设置标题
     setTitle(context, str, row = 0, num = 6) {
         let newStr = '';
-        if (row) {
+        if (row && str) {
             let nowRow = 1, strArr = str.split('');
             strArr.forEach((item, index) => {
                 if (nowRow < row && index >= nowRow * num) { nowRow++; newStr += '\n'; }
@@ -139,8 +139,37 @@ class Actions {
     }
 }
 
+class EventEmitter {
+    constructor() {
+        this.events = {};
+    }
+
+    // 订阅事件
+    subscribe(event, listener) {
+        if (!this.events[event]) {
+            this.events[event] = [];
+        }
+        this.events[event].push(listener);
+    }
+
+    // 取消订阅
+    unsubscribe(event, listenerToRemove) {
+        if (!this.events[event]) return;
+
+        this.events[event] = this.events[event].filter(listener => listener !== listenerToRemove);
+    }
+
+    // 发布事件
+    emit(event, data) {
+        if (!this.events[event]) return;
+
+        this.events[event].forEach(listener => listener(data));
+    }
+}
+
 module.exports = {
     log,
     Plugins,
     Actions,
+    EventEmitter
 };

@@ -60,6 +60,7 @@
     "获取ID": "フェッチID",
     "CLIENT ID": "CLIENT ID",
     "用户": "ユーザー",
+    "Logout": "ログアウト",
     "理想音量": "音量",
     "调整单位": "単位を調整する",
     "图标样式": "アイコンのスタイル",
@@ -79,6 +80,7 @@
     "-25%": "-25%",
     "取消静音": "ミュート解除",
     "静音/取消静音": "ミュート/ミュート解除",
+    "View the tutorial": "チュートリアルを見る",
     "连接次数过多请重新启动Discord": "接続が多すぎる場合は、Discordを再起動してください",
     "https://discord.com/developers/applications": "https://discord.com/developers/applications"
   }

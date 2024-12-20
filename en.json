@@ -59,6 +59,7 @@
     "语音通道": "Voice Channel",
     "获取ID": "Get ID",
     "用户": "User",
+    "Logout": "Logout",
     "理想音量": "Ideal volume",
     "调整单位": "Adjust the unit",
     "图标样式": "Icon style",
@@ -80,6 +81,7 @@
     "静音/取消静音": "Mute/unmute",
     "连接次数过多请重新启动Discord": "Too many connections, please restart Discord",
     "CLIENT ID": "CLIENT ID",
+    "View the tutorial": "View the tutorial",
     "https://discord.com/developers/applications": "https://discord.com/developers/applications"
   }
 }

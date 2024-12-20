@@ -2,14 +2,14 @@
 /// <reference path="../utils/action.js" />
 
 // {
-//     "Icon": "static/icon/01.儅僀僋儈儏乕僩[Discord]僾儔僌僀儞儕僗僩.png",
+//     "Icon": "static/icon/1僾儔僌僀儞儕僗僩.png",
 //     "Name": "按住静音",
 //     "States": [
 //       {
-//         "Image": "static/icon/01.儅僀僋儈儏乕僩[Discord]"
+//         "Image": "static/icon/1"
 //       },
 //       {
-//         "Image": "static/icon/01.儅僀僋儈儏乕僩[Discord]僾儔僌僀儞儕僗僩"
+//         "Image": "static/icon/1僾儔僌僀儞儕僗僩"
 //       }
 //     ],
 //     "UserTitleEnabled": false,
@@ -19,14 +19,14 @@
 //     "PropertyInspectorPath": "propertyInspector/pushtotalk/index.html"
 //   },
 //   {
-//     "Icon": "static/icon/01.儅僀僋儈儏乕僩[Discord]僾儔僌僀儞儕僗僩.png",
+//     "Icon": "static/icon/1僾儔僌僀儞儕僗僩.png",
 //     "Name": "按住讲话",
 //     "States": [
 //       {
-//         "Image": "static/icon/01.儅僀僋儈儏乕僩[Discord]僾儔僌僀儞儕僗僩"
+//         "Image": "static/icon/1僾儔僌僀儞儕僗僩"
 //       },
 //       {
-//         "Image": "static/icon/01.儅僀僋儈儏乕僩[Discord]"
+//         "Image": "static/icon/1"
 //       }
 //     ],
 //     "UserTitleEnabled": false,

@@ -1460,3 +1460,14 @@ input[type="range"].colortemperature::-webkit-slider-thumb {
     opacity: 1;
     transition: opacity 0.25s ease-out
 }
+
+.sdpi-item-label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-start;
+}
